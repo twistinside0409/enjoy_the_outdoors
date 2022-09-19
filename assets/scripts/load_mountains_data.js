@@ -2,6 +2,11 @@
 
 let mountainsArray = []
 
+//My add
+let mountainList = document.getElementById("#mountain-list") //"DDL"
+let mountainOutput = document.getElementById("#mountain-output") //"outputdiv"
+
+
 window.onload = function(){
 
     loadJsonData("assets/data/mountains.json").then((mountains) => {
@@ -9,6 +14,7 @@ window.onload = function(){
     })
 
 }
+
 
 //function that can "fetch" the sunset/sunrise times
 let loadJsonData = async (path) => {
