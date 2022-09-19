@@ -1,0 +1,23 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("../images/hero_etc/stream_hero.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    color: whitesmoke;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
