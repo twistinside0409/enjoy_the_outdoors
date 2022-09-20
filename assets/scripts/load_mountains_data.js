@@ -32,7 +32,9 @@ function mtnData() {
     let desc = mountainsArray.find(mountains => mountains.name === selected.value).desc;
     let co = mountainsArray.find(mountains => mountains.name === selected.value);
     let cord = co.coords;
-    console.log(cord)
+
+    let cordlat = cord.lat;
+    let cordlong = cord.lng;
 
 }
 
