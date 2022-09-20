@@ -43,22 +43,34 @@
 </div>
 <!-- end hero image -->
 
-<!-- mountain dropdown-->
+<!-- mountain dropdown + button-->
 <div class="container text-center mt-5">
-    <div class="row">
-        <div class="col-6">
+    <div class="row justify-content-center">
+        <div class="col-2 text-end fw-bold pt-2">
             <label for="mountain-list">Pick a mountain</label>
-            <select class="form-control" id="mountain-list">
+        </div>
+        <div class="col-2">
+            <select class="form-select" id="mountain-list">
                 <option value="">any mountain...</option>
             </select>
         </div>
     </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-success" id="mountain-click">Show me!</button>
+        </div>
+    </div> 
 </div>
-
 <!-- end mountain dropdown-->
 
-
 <!-- mountain TABLE-->
+<div class="container mt-5 border-5">
+    <div class="row" id="mtn-display"> 
+        <!--Where mtn info displays...-->
+    </div>
+</div>
+
+
 <!-- end mountain TABLE-->
 
 
