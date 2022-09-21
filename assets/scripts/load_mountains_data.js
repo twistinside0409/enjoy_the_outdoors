@@ -36,12 +36,21 @@ function mtnData() {
     let cordlat = cord.lat;
     let cordlong = cord.lng;
 
+    //JS attribute var latch to html display
+    const nmDisplay = document.getElementById('nm');
+    const elDisplay = document.getElementById('el');
+    const efDisplay = document.getElementById('ef');
+    const picDisplay = document.getElementById('pic');
+    const descDisplay = document.getElementById('desc');
+
+
+    //push info into display
+    nmDisplay.innerHTML = nm;
+    elDisplay.innerHTML = "Elevation: " + el;
+    efDisplay.innerHTML = "Effort: " + ef;
+    picDisplay.innerHTML = "<img src='assets/images/mountains/" + pic + "' alt='"+ nm + "' class='border border-dark border-4'>";
+    descDisplay.innerHTML = desc;
 }
-
-//to display class ("mountains") object attributes (all info) below dropdown
-//function displayMtn() {}
-
-
 
 
 
@@ -52,12 +61,3 @@ let loadJsonData = async (path) => {
     let data = await response.json()
     return data
 }
-
-/*        "name": "Mt. Adams", (nm
-        "elevation": 5799, (el)
-        "effort": "Strenuous", (ef)
-        "img": "Adams-StoryImage_2.jpg", (pic)
-        "desc": "Mt. Adams (5,799') is the second highest peak in New England, offering spectacular views across the Great Gulf and King Ravine.", (desc)
-        "coords": { (co)
-            "lat": 44.320686,
-            "lng": -71.291742  */

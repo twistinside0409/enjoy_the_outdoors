@@ -16,17 +16,18 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand link-dark fw-bold" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-evenly fw-bold" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link link-dark disabled" aria-current="page" href="mountains.html">Mountains</a>
           </li>
+          <li><img src="assets/images/hero_etc/tree_icon.png" height="25px" width="25px"></li>
           <li class="nav-item">
             <a class="nav-link link-dark" href="parks.html">National Parks</a>
           </li>
@@ -38,7 +39,7 @@
 <!-- hero image -->
 <div class="hero">
     <div class="hero-text">
-        <h1>Ready to see the world?</h1>
+        <h1 class="display-3">Ready to see the world?</h1>
     </div>
 </div>
 <!-- end hero image -->
@@ -46,27 +47,38 @@
 <!-- mountain dropdown + button-->
 <div class="container text-center mt-5">
     <div class="row justify-content-center">
-        <div class="col-2 text-end fw-bold pt-2">
-            <label for="mountain-list">Pick a mountain</label>
+        <div class="col-4 text-end">
+            <label for="mountain-list" class="display-4">Pick a mountain</label>
         </div>
         <div class="col-2">
-            <select class="form-select" id="mountain-list">
+            <select class="form-select form-select-lg" id="mountain-list">
                 <option value="">any mountain...</option>
             </select>
         </div>
     </div>
     <div class="row justify-content-center mt-3">
-        <div class="col-4">
-            <button type="button" class="btn btn-outline-success" id="mountain-click">Show me!</button>
+        <div class="col-6">
+            <button type="button" class="btn btn-outline-success btn-lg" id="mountain-click">Show me!</button>
         </div>
     </div> 
 </div>
 <!-- end mountain dropdown-->
 
 <!-- mountain TABLE-->
-<div class="container mt-5 border-5">
-    <div class="row" id="mtn-display"> 
-        <!--Where mtn info displays...-->
+<div class="container mt-5">
+    <div class="row text-center" id="mtn-display">
+        <h3 id="nm" class="mb-3 p-3 border-bottom border-4 display-5"><!--name here--></h3>
+    </div>
+    <div class="row justify-content-center mb-5 pb-2 border-bottom border-4" id="mtn-display">
+        <div class="col col-4" id="pic">
+        <!-- pic feeds here--> 
+        </div>
+        <div class="col col-4 fs-5">
+            <div class="row" id="el"></div>
+            <div class="row" id="ef"></div><br>
+            <div class="row" id="desc"></div><br>
+            <div class="row" id="cord"></div>
+        </div>
     </div>
 </div>
 
