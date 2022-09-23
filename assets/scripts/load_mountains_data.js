@@ -46,7 +46,7 @@ function mtnData() {
 
     //push info into display
     nmDisplay.innerHTML = nm;
-    elDisplay.innerHTML = "Elevation: " + el;
+    elDisplay.innerHTML = "Elevation: " + el +" ft.";
     efDisplay.innerHTML = "Effort: " + ef;
     picDisplay.innerHTML = "<img src='assets/images/mountains/" + pic + "' alt='"+ nm + "' class='border border-dark border-4'>";
     descDisplay.innerHTML = desc;
